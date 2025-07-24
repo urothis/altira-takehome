@@ -1,0 +1,89 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1746466203282
+  modified: 1746466203282
+  description: ""
+collection:
+  - url: "{{ _.HOST }}/schedule"
+    name: Schedule
+    meta:
+      id: req_81f1cc09454948479f13346354958477
+      created: 1753308005893
+      modified: 1753308525559
+      isPrivate: false
+      description: ""
+      sortKey: -1753308005893
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        [
+          {
+            "name": "John Doe",
+            "phone": "212-555-5555"
+          },
+          {
+            "name": "Jane Doe",
+            "phone": "212-555-5556",
+            "scheduled": "2023-04-01T10:00:00Z"
+          }
+        ]
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_f559010fb1f042718cdd3c61e4c4f8cf
+      - name: User-Agent
+        value: insomnia/11.3.0
+        id: pair_54ddf3e72670454ea3914abade310e85
+      - id: pair_778b857747244924bcc0882ac7d2d3d2
+        name: ""
+        value: your_api_key
+        description: ""
+        disabled: false
+    authentication:
+      type: bearer
+      token: your_api_key
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1746466215079
+    modified: 1746720828352
+  cookies:
+    - key: AWSALB
+      value: l8yCT3k8lUtCdusQ7+fykuikKNkSf2+KRQUlezcurcmNH4Fv8bsdSFji9pRNjqHyhB61lYHuNqiPWcp8/QR60ar3x8s8oHhZwXC8DohP9yURO1Gg3mgc0p8yKWfd
+      domain: umbilical.services.angeleyehealth.com
+      path: /
+      hostOnly: true
+      creation: 2025-05-08T00:07:01.167Z
+      lastAccessed: 2025-05-08T16:13:48.352Z
+      id: c4fc857a-f164-4203-8867-2035c3d42dcc
+    - key: AWSALBCORS
+      value: l8yCT3k8lUtCdusQ7+fykuikKNkSf2+KRQUlezcurcmNH4Fv8bsdSFji9pRNjqHyhB61lYHuNqiPWcp8/QR60ar3x8s8oHhZwXC8DohP9yURO1Gg3mgc0p8yKWfd
+      domain: umbilical.services.angeleyehealth.com
+      path: /
+      secure: true
+      hostOnly: true
+      creation: 2025-05-08T00:07:01.168Z
+      lastAccessed: 2025-05-08T16:13:48.352Z
+      sameSite: none
+      id: 7b532342-ea8d-4fad-82d8-364e38e120aa
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1746466215022
+    modified: 1753308272807
+    isPrivate: false
+  data:
+    HOST: http://localhost:3000

@@ -1,0 +1,9 @@
+---
+services:
+  scheduling:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: scheduling
+    ports:
+      - 3000:3000

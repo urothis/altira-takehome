@@ -1,0 +1,16 @@
+[package]
+name = "scheduler"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = { version = "0.8.4", features = ["tracing"] }
+chrono = { version = "0.4.41" }
+chrono-tz = { version = "0.5" }
+log = { version = "*" }
+rand = { version = "0.9.2" }
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1.46.1", features = ["full"] }
+tower = { version = "0.5.2", features = ["util"] }
+tower-http = { version = "0.6.6", features = ["fs", "timeout", "trace"] }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
